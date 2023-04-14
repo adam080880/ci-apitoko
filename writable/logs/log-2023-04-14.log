@@ -1,0 +1,33 @@
+ERROR - 2023-04-14 14:26:03 --> mysqli_sql_exception: Column 'nama' cannot be null in /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `me...', 0)
+#1 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `me...')
+#2 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `me...')
+#3 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `me...', Array, false)
+#4 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/app/Controllers/Registrasi.php(19): CodeIgniter\BaseModel->save(Array)
+#9 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(934): App\Controllers\Registrasi->index()
+#10 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrasi))
+#11 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Commands/Server/rewrite.php(47): require_once('/Users/muhamada...')
+#14 {main}
+CRITICAL - 2023-04-14 14:26:03 --> Column 'nama' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `member` (`nama`, `email`, `password`) VALUES (NULL, NULL, \'$2y$10$9F.SVdUX0cEITPac0R2.8Ow9K2neye0RtclMRG5CEzgllWveggsnm\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `member` (`nama`, `email`, `password`) VALUES (NULL, NULL, \'$2y$10$9F.SVdUX0cEITPac0R2.8Ow9K2neye0RtclMRG5CEzgllWveggsnm\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `member` (`nama`, `email`, `password`) VALUES (NULL, NULL, \'$2y$10$9F.SVdUX0cEITPac0R2.8Ow9K2neye0RtclMRG5CEzgllWveggsnm\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `member` (`nama`, `email`, `password`) VALUES (:nama:, :email:, :password:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/Registrasi.php(19): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Registrasi->index()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrasi))
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')
