@@ -56,7 +56,7 @@ class Login extends RestfulController {
     $panjangKarakter = strlen($karakter);
     $str = '';
 
-    for ($i = 0; $i < $panjangKarakter; $i++) {
+    for ($i = 0; $i < $len; $i++) {
       $str .= $karakter[random_int(0, $panjangKarakter - 1)];
     }
 
