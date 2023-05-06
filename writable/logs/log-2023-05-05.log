@@ -1,0 +1,120 @@
+ERROR - 2023-05-05 13:50:54 --> mysqli_sql_exception: Table 'tokoapi.products' doesn't exist in /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/app/Controllers/Produk.php(27): CodeIgniter\BaseModel->findAll()
+#7 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(934): App\Controllers\Produk->list()
+#8 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#9 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Commands/Server/rewrite.php(47): require_once('/Users/muhamada...')
+#12 {main}
+CRITICAL - 2023-05-05 13:50:54 --> Table 'tokoapi.products' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `products`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Produk.php(27): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Produk->list()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')
+ERROR - 2023-05-05 13:51:09 --> mysqli_sql_exception: Table 'tokoapi.products' doesn't exist in /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/app/Controllers/Produk.php(27): CodeIgniter\BaseModel->findAll()
+#7 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(934): App\Controllers\Produk->list()
+#8 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#9 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Commands/Server/rewrite.php(47): require_once('/Users/muhamada...')
+#12 {main}
+CRITICAL - 2023-05-05 13:51:09 --> Table 'tokoapi.products' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `products`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Produk.php(27): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Produk->list()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')
+ERROR - 2023-05-05 13:51:34 --> mysqli_sql_exception: Table 'tokoapi.products' doesn't exist in /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/app/Controllers/Produk.php(27): CodeIgniter\BaseModel->findAll()
+#7 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(934): App\Controllers\Produk->list()
+#8 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#9 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/muhamadadam/Kuliah/flutter/api/tokoapi/system/Commands/Server/rewrite.php(47): require_once('/Users/muhamada...')
+#12 {main}
+CRITICAL - 2023-05-05 13:51:34 --> Table 'tokoapi.products' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `products`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Produk.php(27): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Produk->list()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')
+CRITICAL - 2023-05-05 13:57:19 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')
+CRITICAL - 2023-05-05 13:57:20 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')
+CRITICAL - 2023-05-05 13:57:20 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/muhamadadam/Kuliah/flutter/api/tokoapi/public/index.php')

@@ -36,11 +36,13 @@ $routes->post('/registrasi', 'Registrasi::index');
 $routes->post('/login', 'Login::index');
 
 // Produk
-$routes->get('/produk', 'Produk::index');
-$routes->get('/produk/{id}', 'Produk::show');
-$routes->delete('/produk/{id}', 'Produk::delete');
-$routes->post('/produk', 'Produk::create');
-$routes->post('/produk/{id}/update', 'Produk::update');
+$routes->group('produk', function ($routes) {
+    $routes->post('/', 'Produk::create');
+    $routes->get('/', 'Produk::list');
+    $routes->get('(:segment)', 'Produk::detail/$1');
+    $routes->put('(:segment)', 'Produk::ubah/$1');
+    $routes->delete('(:segment)', 'Produk::hapus/$1');
+});
 
 
 /*
