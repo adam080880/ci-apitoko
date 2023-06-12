@@ -19,21 +19,21 @@ class Produk extends RestfulController {
     $produkModel->insert($data);
     $produk = $produkModel->find($produkModel->getInsertID());
 
-    return $this->responseHasil(200, true, $produk);
+    return $this->responseHasil(200, true, $produk, 'success');
   }
 
   public function list() {
     $produkModel = new ProdukModel();
     $allProduk = $produkModel->findAll();
     
-    return $this->responseHasil(200, true, $allProduk);
+    return $this->responseHasil(200, true, $allProduk, 'success');
   }
 
   public function detail($id) {
     $produkModel = new ProdukModel();
     $produk = $produkModel->find($id);
     
-    return $this->responseHasil(200, true, $produk);
+    return $this->responseHasil(200, true, $produk, 'success');
   }
 
   public function ubah($id) {
@@ -48,13 +48,13 @@ class Produk extends RestfulController {
 
     $produk = $produkModel->find($id);
     
-    return $this->responseHasil(200, true, $produk);
+    return $this->responseHasil(200, true, $produk, 'success');
   }
 
   public function hapus($id) {
     $produkModel = new ProdukModel();
     $produk = $produkModel->delete($id);
     
-    return $this->responseHasil(200, true, $produk);
+    return $this->responseHasil(200, true, $produk, 'success');
   }
 };

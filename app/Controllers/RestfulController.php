@@ -7,11 +7,12 @@ use CodeIgniter\RESTful\ResourceController;
 class RestfulController extends ResourceController {
   protected $format = 'json';
 
-  protected function responseHasil($code, $status, $data) {
+  protected function responseHasil($code, $status, $data, $message) {
     return $this->respond([
       'code' => $code,
       'status' => $status,
       'data' => $data,
+      'message' => $message
     ]);
   }
 };

@@ -16,18 +16,18 @@ class Login extends RestfulController {
       ];
 
       if (!$data['email'] || !$data['password']) {
-        return $this->responseHasil(400, false, 'Semua field wajib diisi');
+        return $this->responseHasil(400, false, null, 'Semua field wajib diisi');
       }
 
       $memberModel = new MemberModel();
       $member = $memberModel->where(['email' => $data['email']])->first();
 
       if (!$member) {
-        return $this->responseHasil(400, false, 'Email tidak ditemukan');
+        return $this->responseHasil(400, false, null, 'Email tidak ditemukan');
       }
 
       if (!password_verify($data['password'], $member['password'])) {
-        return $this->responseHasil(400, false, 'Password tidak cocok');
+        return $this->responseHasil(400, false, null, 'Password tidak cocok');
       }
 
       $generatedAuthKey = $this->randomString();
@@ -44,9 +44,9 @@ class Login extends RestfulController {
           'id' => $member['id'],
           'email' => $member['email']
         ]
-      ]);
+      ], 'Berhasil login');
     } catch (Exception $error) {
-      return $this->responseHasil(500, false, $error->getMessage());
+      return $this->responseHasil(500, false, null, $error->getMessage());
     }
   }
 

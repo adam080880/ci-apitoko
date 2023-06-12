@@ -16,15 +16,15 @@ class Registrasi extends RestfulController {
       ];
 
       if (!$data['nama'] || !$data['email'] || !$data['password']) {
-        return $this->responseHasil(400, false, 'Semua field wajib diisi');
+        return $this->responseHasil(400, false, null, 'Semua field wajib diisi');
       }
   
       $registrasiModel = new RegistrasiModel();
       $registrasiModel->save($data);
   
-      return $this->responseHasil(200, true, 'Berhasil registrasi');
+      return $this->responseHasil(200, true, null, 'Berhasil registrasi');
     } catch (Exception $error) {
-      return $this->responseHasil(500, false, 'Gagal registrasi');
+      return $this->responseHasil(500, false, null, 'Gagal registrasi');
     }
   }
 };
