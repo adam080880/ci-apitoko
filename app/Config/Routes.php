@@ -40,7 +40,7 @@ $routes->group('produk', function ($routes) {
     $routes->post('/', 'Produk::create');
     $routes->get('/', 'Produk::list');
     $routes->get('(:segment)', 'Produk::detail/$1');
-    $routes->put('(:segment)', 'Produk::ubah/$1');
+    $routes->post('(:segment)/update', 'Produk::ubah/$1');
     $routes->delete('(:segment)', 'Produk::hapus/$1');
 });
 
