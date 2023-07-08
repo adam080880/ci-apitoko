@@ -13,6 +13,8 @@ class Produk extends RestfulController {
       'kodeproduk' => $this->request->getVar('kodeproduk'),
       'namaproduk' => $this->request->getVar('namaproduk'),
       'hargaproduk' => $this->request->getVar('hargaproduk'),
+      'hargabeliproduk' => $this->request->getVar('hargabeliproduk'),
+      'kategorigroupproduk' => $this->request->getVar('kategorigroupproduk'),
     ];
 
     $produkModel = new ProdukModel();
@@ -41,6 +43,8 @@ class Produk extends RestfulController {
       'kodeproduk' => $this->request->getVar('kodeproduk'),
       'namaproduk' => $this->request->getVar('namaproduk'),
       'hargaproduk' => $this->request->getVar('hargaproduk'),
+      'hargabeliproduk' => $this->request->getVar('hargabeliproduk'),
+      'kategorigroupproduk' => $this->request->getVar('kategorigroupproduk'),
     ];
 
     $produkModel = new ProdukModel();
